@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5538565055519945945
+--- !u!1 &4610819728881593111
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5538565055519945942}
-  - component: {fileID: 5538565055519945940}
-  - component: {fileID: 5538565055519945943}
+  - component: {fileID: 5873678296096256639}
+  - component: {fileID: 1439360850959442794}
+  - component: {fileID: 3150823390440655084}
   m_Layer: 5
-  m_Name: item
+  m_Name: Gems 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &5538565055519945942
+--- !u!224 &5873678296096256639
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5538565055519945945}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 4610819728881593111}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -34,24 +34,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281.2, y: 91.2}
-  m_SizeDelta: {x: 29.78, y: 29.8}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20.46, y: 26.12}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5538565055519945940
+--- !u!222 &1439360850959442794
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5538565055519945945}
+  m_GameObject: {fileID: 4610819728881593111}
   m_CullTransparentMesh: 0
---- !u!114 &5538565055519945943
+--- !u!114 &3150823390440655084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5538565055519945945}
+  m_GameObject: {fileID: 4610819728881593111}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -65,7 +65,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 5797490915339947947, guid: 648e4471eec7f4c39a72810ce5fcbe57,
+  m_Sprite: {fileID: 7411393480313546480, guid: 648e4471eec7f4c39a72810ce5fcbe57,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

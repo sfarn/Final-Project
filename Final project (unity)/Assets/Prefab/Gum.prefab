@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1763465726455437080}
   - component: {fileID: 2348536553733867163}
   - component: {fileID: 7303558335446434662}
-  - component: {fileID: 6961848003110328473}
+  - component: {fileID: 6209804290066231382}
   m_Layer: 0
   m_Name: Gum
   m_TagString: Untagged
@@ -95,10 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd9210fdb1e54cdb8fa0efe8671a808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 5538565055519945945, guid: 3d833ef7aced0440c8e6c02d0174fec9,
+  itemButton: {fileID: 8639668745604733801, guid: cc58e2416225d405c995bc60a42c9ebc,
     type: 3}
---- !u!61 &6961848003110328473
-BoxCollider2D:
+--- !u!58 &6209804290066231382
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111,15 +111,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.04, y: 0.97}
-    newSize: {x: 1.04, y: 0.97}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.04, y: 0.97}
-  m_EdgeRadius: 0
+  m_Radius: 0.8

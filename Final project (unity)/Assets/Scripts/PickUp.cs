@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
+    private Inventory inventory2;
     //add inventory2 for player yellow
     public GameObject itemButton;
 
@@ -14,6 +15,7 @@ public class PickUp : MonoBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Red").GetComponent<Inventory>();
+        inventory2 = GameObject.FindGameObjectWithTag("Yellow").GetComponent<Inventory>();
         //add inventory2 for player yellow
     }
 
@@ -26,14 +28,32 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("Red"))
         {
-            for (int i = 0; i < inventory.slots.Length; i++)
+            for (int i = 0; i < inventory.redSlots.Length; i++)
             {
-                if(inventory.isFull[i] == false)
+                if (inventory.isFull[i] == false)
                 {
                     //add items
+                    Debug.Log("open");
                     inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                    Instantiate(itemButton, inventory.redSlots[i].transform, false);
                     Destroy(gameObject);
+                    Debug.Log("onefull");
+                    break;
+                }
+            }
+        }
+        if (other.CompareTag("Yellow"))
+        {
+            for (int y = 0; y < inventory2.yellowSlots.Length; y++)
+            {
+                if (inventory2.isFull[y] == false)
+                {
+                    //add items
+                    Debug.Log("open");
+                    inventory2.isFull[y] = true;
+                    Instantiate(itemButton, inventory2.yellowSlots[y].transform, false);
+                    Destroy(gameObject);
+                    Debug.Log("onefull");
                     break;
                 }
             }

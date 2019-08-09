@@ -6,7 +6,8 @@ public class Inventory : MonoBehaviour
 {
 
     public bool[] isFull;
-    public GameObject[] slots;
+    public GameObject[] redSlots;
+    public GameObject[] yellowSlots;
 
 
     // Start is called before the first frame update

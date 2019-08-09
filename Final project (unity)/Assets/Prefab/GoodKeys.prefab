@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1757136350644344736}
   - component: {fileID: 1009710757329442168}
   - component: {fileID: 463389772826075264}
-  - component: {fileID: 8676533497605146419}
+  - component: {fileID: 8486219515772117952}
   m_Layer: 0
   m_Name: GoodKeys
   m_TagString: Untagged
@@ -95,10 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd9210fdb1e54cdb8fa0efe8671a808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 5538565055519945945, guid: 3d833ef7aced0440c8e6c02d0174fec9,
+  itemButton: {fileID: 4360366269563077286, guid: 7c04b827ffdc94df3acd39b9149be21b,
     type: 3}
---- !u!61 &8676533497605146419
-BoxCollider2D:
+--- !u!58 &8486219515772117952
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111,15 +111,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.61, y: 1.5}
-    newSize: {x: 1.61, y: 1.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.61, y: 1.5}
-  m_EdgeRadius: 0
+  m_Radius: 0.8
