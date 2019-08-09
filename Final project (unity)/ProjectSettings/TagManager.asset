@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Red
+  - Yellow
   layers:
   - Default
   - TransparentFX
@@ -41,12 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Players
-    uniqueID: 124714985
-    locked: 0
   - name: BG
     uniqueID: 1095301561
     locked: 0
   - name: well
     uniqueID: 366751019
+    locked: 0
+  - name: Objects
+    uniqueID: 1696636207
+    locked: 0
+  - name: Players
+    uniqueID: 124714985
     locked: 0
