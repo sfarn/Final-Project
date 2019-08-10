@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorEnter : MonoBehaviour
 {
     private Inventory inventory;
+    private Inventory2 inventory2;
     public GameObject[] items;
 
 
@@ -12,6 +13,7 @@ public class DoorEnter : MonoBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Red").GetComponent<Inventory>();
+        inventory2 = GameObject.FindGameObjectWithTag("Yellow").GetComponent<Inventory2>();
     }
 
     // Update is called once per frame
@@ -25,24 +27,41 @@ public class DoorEnter : MonoBehaviour
         {
             for (int i = 0; i < inventory.redSlots.Length; i++) //check through the inventory slot
             {
-                if(inventory.redSlots[i] != null)
+                if (inventory.redSlots[i] != null)
                 {
-                    Debug.Log("Yes");  //have stuff
-                    //check the inventory there is this item
+                 if(Inventory.Instance.Gems > 0)
+                    {
+                        Debug.Log("Go in");
+                    }else if(Inventory.Instance.BadKey > 0)
+                    {
+                        Debug.Log("Go in");
+                    }
+
+
                 }
-                //if(GameObject.Find("Gems 1") == true)
-                //{
-                //    Debug.Log("Go in");
-                //}
-                //if(inventory.redSlots[i] == GameObject.Find("Gems 1")){
-                //    Debug.Log("Go in");
-                //}
-                //if (inventory.redSlots[i] == inventory.redSlots[0])
-                //{
-                //    Debug.Log("Go in");
-                //}
+
+                }
+            }
+        if (other.CompareTag("Yellow"))
+        {
+            for (int i = 0; i < inventory2.yellowSlots.Length; i++) //check through the inventory slot
+            {
+                if (inventory2.yellowSlots[i] != null)
+                {
+                    if (Inventory2.Instance.yGems > 0)
+                    {
+                        Debug.Log("Go in");
+                    }
+                    else if (Inventory2.Instance.yBadKey > 0)
+                    {
+
+                    }
+
+
+                }
 
             }
         }
     }
-}
+    }
+
