@@ -9,9 +9,8 @@ public class PickUp : MonoBehaviour
     //add inventory2 for player yellow
     public GameObject itemButton;
     public static PickUp Instance;
-   //public int Gems;
-    
-   
+    //public int Gems;
+
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +82,7 @@ public class PickUp : MonoBehaviour
                     break;
                 }
             }
+
         }
         if (other.CompareTag("Yellow"))
         {

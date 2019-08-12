@@ -13,21 +13,17 @@ public class PlayerMove : MonoBehaviour
         public KeyCode upKey;
         public KeyCode downKey;
 
-    //public Transform groundPos;  //feetpos
-        //private bool isGrounded;
-        //public float checkRadius;
-        //public LayerMask whatIsGround;
-
-     
-        //Animator animator;
+    AudioSource audio;
+    //Animator animator;
 
 
-        // Start is called before the first frame update
-        void Start()
+    // Start is called before the first frame update
+    void Start()
         {
             rb = GetComponent<Rigidbody2D>();
-           //animator = GetComponent<Animator>();
-        }
+        audio = GetComponent<AudioSource>();
+        //animator = GetComponent<Animator>();
+    }
 
         void FixedUpdate() //!
         {
@@ -65,25 +61,37 @@ public class PlayerMove : MonoBehaviour
 
         if (movement.x == 0)   //for animation just check the teacher sample
             {
-                //animator.SetBool("isIDLE", true);
-            }
+            //animator.SetBool("isIDLE", true);
+                //audio.Stop();
+        }
 
             if (movement.x > 0)
             {
                 transform.eulerAngles = new Vector3(0, 0, 90);
-            }
+                //audio.Play();
+        }
             else if (movement.x < 0)
             {
                 transform.eulerAngles = new Vector3(0, 0, -90);
-            }
+                //audio.Play();
+        }
             if (movement.y > 0)
             {
                 transform.eulerAngles = new Vector3(0, 0, 170);
-            }
+                //audio.Play();
+        }
             else if (movement.y < 0)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
-            }
+                //audio.Play();
+        }
 
     }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("items"))
+        {
+            audio.Play();
+        }
     }
+}

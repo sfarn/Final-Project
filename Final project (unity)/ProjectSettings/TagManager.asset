@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Red
   - Yellow
+  - items
   layers:
   - Default
   - TransparentFX
