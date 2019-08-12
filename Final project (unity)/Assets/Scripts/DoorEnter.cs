@@ -29,12 +29,19 @@ public class DoorEnter : MonoBehaviour
             {
                 if (inventory.redSlots[i] != null)
                 {
-                 if(Inventory.Instance.Gems > 0)
+                 if(Inventory.Instance.GoodKey > 0)
                     {
-                        Debug.Log("Go in");
-                    }else if(Inventory.Instance.BadKey > 0)
-                    {
-                        Debug.Log("Go in");
+                        if (Inventory.Instance.Gems > 0)
+                        {
+                            if (Inventory.Instance.Ropes > 0)
+                            {
+                                if (Inventory.Instance.Food > 0)
+                                {
+                                    Debug.Log("Go in"); //load scene
+                                }
+                            }
+                        }
+
                     }
 
 
@@ -48,12 +55,18 @@ public class DoorEnter : MonoBehaviour
             {
                 if (inventory2.yellowSlots[i] != null)
                 {
-                    if (Inventory2.Instance.yGems > 0)
+                    if (Inventory2.Instance.yGoodKey > 0)
                     {
-                        Debug.Log("Go in");
-                    }
-                    else if (Inventory2.Instance.yBadKey > 0)
-                    {
+                        if (Inventory2.Instance.yGems > 0)
+                        {
+                            if (Inventory2.Instance.yRopes > 0)
+                            {
+                                if (Inventory2.Instance.yFood > 0)
+                                {
+                                    Debug.Log("Go in"); //load scene
+                                }
+                            }
+                        }
 
                     }
 

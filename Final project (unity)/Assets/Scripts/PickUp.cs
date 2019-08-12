@@ -71,6 +71,11 @@ public class PickUp : MonoBehaviour
                         Debug.Log("rope");
                         Inventory.Instance.Ropes++;
                     }
+                    if (itemButton.name == "Goodkeys 1")
+                    {
+                        Debug.Log("gd key");
+                        Inventory.Instance.GoodKey++;
+                    }
 
                     Destroy(gameObject);
                     //Debug.Log("onefull");
@@ -119,6 +124,11 @@ public class PickUp : MonoBehaviour
                     {
                         Debug.Log("rope");
                         Inventory2.Instance.yRopes++;
+                    }
+                    if (itemButton.name == "Goodkeys 1")
+                    {
+                        Debug.Log("gd key");
+                        Inventory2.Instance.yGoodKey++;
                     }
 
                     Destroy(gameObject);
