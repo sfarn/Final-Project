@@ -38,8 +38,8 @@ public class PickUp : MonoBehaviour
                     //add items
                     //Debug.Log("open");
                     inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.redSlots[i].transform, false);
-
+                    inventory.redItems[i] = Instantiate(itemButton, inventory.redSlots[i].transform, false);
+                   
                     if (itemButton.name == "Gems 1")
                     {
                         Debug.Log("Gems");
@@ -83,20 +83,20 @@ public class PickUp : MonoBehaviour
                 }
             }
 
-            if (PlayerMove.Instance.hurt > 0) //its not detecting
-            {
-                Debug.Log("hurt");
-                for (int i = 5; i > inventory.redSlots.Length; i--)
-                {   //check the slot from down to up
-                    if (inventory.isFull[i] == true) //there is an item
-                    {
-                        Debug.Log("fill");
-                        Destroy(itemButton); //destroy that item on the latest slot
-                        inventory.isFull[i] = false;  //that slot becomes empty again
-                        //PlayerMove.Instance.hurt = 0;
-                    }
-                }
-            }
+            //if (PlayerMove.Instance.hurt > 0) //its not detecting
+            //{
+            //    Debug.Log("hurt");
+            //    for (int i = 5; i > inventory.redSlots.Length; i--)
+            //    {   //check the slot from down to up
+            //        if (inventory.isFull[i] == true) //there is an item
+            //        {
+            //            Debug.Log("fill");
+            //            Destroy(itemButton); //destroy that item on the latest slot
+            //            inventory.isFull[i] = false;  //that slot becomes empty again
+            //            //PlayerMove.Instance.hurt = 0;
+            //        }
+            //    }
+            //}
         }
             if (other.CompareTag("Yellow"))
             {
@@ -107,7 +107,7 @@ public class PickUp : MonoBehaviour
                         //add items
                         //Debug.Log("open");
                         inventory2.isFull[y] = true;
-                        Instantiate(itemButton, inventory2.yellowSlots[y].transform, false);
+                        inventory2.yellowItems[y] = Instantiate(itemButton, inventory2.yellowSlots[y].transform, false);
 
                         if (itemButton.name == "Gems 1")
                         {

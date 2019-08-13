@@ -27,25 +27,36 @@ public class DropSlot : MonoBehaviour
     {
         if (other.CompareTag("Trap"))
         {
-            Debug.Log("hurt");
-            hurt++;
-            if (hurt > 0)
-            {
-                Debug.Log("hurtmore");
-                for (int i = 5; i > inventory.redSlots.Length; i--)
+           
+                for (int i = inventory.redSlots.Length - 1; i >= 0; i--)
                 {   //check the slot from down to up
-                    if (inventory.isFull[i] == true) //there is an item
+                    if (inventory.redItems[i] != null)
                     {
-                        Debug.Log("fill");
-                       Destroy(PickUp.Instance.itemButton); //destroy that item on the latest slot
-                        //inventory.isFull[i] = false;  //that slot becomes empty again
-                        //PlayerMove.Instance.hurt = 0;
+                        Destroy(inventory.redItems[i]);
+                        inventory.isFull[i] = false;
+                    break;
                     }
+                    //if (inventory.isFull[i] == true) //there is an item
+                    //{
+                    //    Debug.Log("fill");
+                    //   Destroy(PickUp.Instance.itemButton); //destroy that item on the latest slot
+                    //    inventory.isFull[i] = false;  //that slot becomes empty again
+                    //    //PlayerMove.Instance.hurt = 0;
+                    //}
                 }
-
-
+            for (int i = inventory2.yellowSlots.Length - 1; i >= 0; i--)
+            {   //check the slot from down to up
+                if (inventory2.yellowItems[i] != null)
+                {
+                    Destroy(inventory2.yellowItems[i]);
+                    inventory2.isFull[i] = false;
+                    break;
+                }
+           
             }
+
+
+        }
 
         }
     }
-}

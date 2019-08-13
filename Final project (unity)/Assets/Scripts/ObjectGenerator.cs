@@ -22,7 +22,13 @@ public class ObjectGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(objects == null)  //if that there is no object in that point
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            int random = Random.Range(0, objects.Length);
+            Instantiate(objects[random], transform.position, Quaternion.identity);
+        }
+
+        if (objects == null)  //if that there is no object in that point
         {
             Debug.Log("Gone");
         }
