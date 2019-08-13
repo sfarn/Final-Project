@@ -8,9 +8,11 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="DoorEnter.cs" t="Include" />
+          <e p="DropSlot.cs" t="Include" />
           <e p="Instruction.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="Inventory2.cs" t="Include" />
+          <e p="LightDecrease.cs" t="Include" />
           <e p="MazeMake.cs" t="Include" />
           <e p="ObjectGenerator.cs" t="Include" />
           <e p="PickUp.cs" t="Include" />
