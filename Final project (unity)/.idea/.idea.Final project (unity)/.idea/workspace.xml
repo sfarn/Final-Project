@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f50b07-cf3b-4de6-b8bc-3e61d2ee1d9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Final project (unity)/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final project (unity)/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Final project (unity)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final project (unity)/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MazeWLight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MazeWLight.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightDecrease.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="240">
               <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
               <folding>
                 <marker date="1565721112411" expanded="false" signature="6:125" ph="..." />
@@ -54,11 +52,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <marker date="1565712255561" expanded="false" signature="6:78" ph="..." />
-                <marker date="1565712255561" expanded="true" signature="124:576" ph="{...}" />
-                <marker date="1565712255561" expanded="true" signature="232:381" ph="{...}" />
-                <marker date="1565712255561" expanded="true" signature="439:574" ph="{...}" />
-                <marker date="1565712255561" expanded="true" signature="517:568" ph="{...}" />
+                <marker date="1565723087573" expanded="false" signature="6:78" ph="..." />
+                <marker date="1565723087573" expanded="true" signature="124:780" ph="{...}" />
+                <marker date="1565723087573" expanded="true" signature="232:381" ph="{...}" />
+                <marker date="1565723087573" expanded="true" signature="439:778" ph="{...}" />
+                <marker date="1565723087573" expanded="true" signature="486:647" ph="{...}" />
+                <marker date="1565723087573" expanded="true" signature="721:772" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -280,7 +279,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightDecrease.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="240">
           <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
           <folding>
             <marker date="1565721112411" expanded="false" signature="6:125" ph="..." />
@@ -296,11 +295,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1565712255561" expanded="false" signature="6:78" ph="..." />
-            <marker date="1565712255561" expanded="true" signature="124:576" ph="{...}" />
-            <marker date="1565712255561" expanded="true" signature="232:381" ph="{...}" />
-            <marker date="1565712255561" expanded="true" signature="439:574" ph="{...}" />
-            <marker date="1565712255561" expanded="true" signature="517:568" ph="{...}" />
+            <marker date="1565723087573" expanded="false" signature="6:78" ph="..." />
+            <marker date="1565723087573" expanded="true" signature="124:780" ph="{...}" />
+            <marker date="1565723087573" expanded="true" signature="232:381" ph="{...}" />
+            <marker date="1565723087573" expanded="true" signature="439:778" ph="{...}" />
+            <marker date="1565723087573" expanded="true" signature="486:647" ph="{...}" />
+            <marker date="1565723087573" expanded="true" signature="721:772" ph="{...}" />
           </folding>
         </state>
       </provider>
