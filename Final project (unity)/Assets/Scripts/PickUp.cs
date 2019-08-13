@@ -31,7 +31,7 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("Red"))
         {
-            for (int i = 0; i < inventory.redSlots.Length; i++)
+            for (int i = 0; i < inventory.redSlots.Length; i++)  //up to down
             {
                 if (inventory.isFull[i] == false)
                 {
@@ -40,7 +40,7 @@ public class PickUp : MonoBehaviour
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.redSlots[i].transform, false);
 
-                    if(itemButton.name == "Gems 1")
+                    if (itemButton.name == "Gems 1")
                     {
                         Debug.Log("Gems");
                         Inventory.Instance.Gems++;
@@ -83,59 +83,75 @@ public class PickUp : MonoBehaviour
                 }
             }
 
-        }
-        if (other.CompareTag("Yellow"))
-        {
-            for (int y = 0; y < inventory2.yellowSlots.Length; y++)
+            if (PlayerMove.Instance.hurt > 0) //its not detecting
             {
-                if (inventory2.isFull[y] == false)
-                {
-                    //add items
-                    //Debug.Log("open");
-                    inventory2.isFull[y] = true;
-                    Instantiate(itemButton, inventory2.yellowSlots[y].transform, false);
-
-                    if (itemButton.name == "Gems 1")
+                Debug.Log("hurt");
+                for (int i = 5; i > inventory.redSlots.Length; i--)
+                {   //check the slot from down to up
+                    if (inventory.isFull[i] == true) //there is an item
                     {
-                        Debug.Log("Gems");
-                        Inventory2.Instance.yGems++;
+                        Debug.Log("fill");
+                        Destroy(itemButton); //destroy that item on the latest slot
+                        inventory.isFull[i] = false;  //that slot becomes empty again
+                        //PlayerMove.Instance.hurt = 0;
                     }
-                    if (itemButton.name == "Badkeys 1")
-                    {
-                        Debug.Log("BK");
-                        Inventory2.Instance.yBadKey++;
-                    }
-                    if (itemButton.name == "Feathers 1")
-                    {
-                        Debug.Log("F");
-                        Inventory2.Instance.yFeathers++;
-                    }
-                    if (itemButton.name == "Food 1")
-                    {
-                        Debug.Log("Food");
-                        Inventory2.Instance.yFood++;
-                    }
-                    if (itemButton.name == "gum 1")
-                    {
-                        Debug.Log("gum");
-                        Inventory2.Instance.yGums++;
-                    }
-                    if (itemButton.name == "Ropes")
-                    {
-                        Debug.Log("rope");
-                        Inventory2.Instance.yRopes++;
-                    }
-                    if (itemButton.name == "Goodkeys 1")
-                    {
-                        Debug.Log("gd key");
-                        Inventory2.Instance.yGoodKey++;
-                    }
-
-                    Destroy(gameObject);
-                   //Debug.Log("onefull");
-                    break;
                 }
             }
         }
+            if (other.CompareTag("Yellow"))
+            {
+                for (int y = 0; y < inventory2.yellowSlots.Length; y++)
+                {
+                    if (inventory2.isFull[y] == false)
+                    {
+                        //add items
+                        //Debug.Log("open");
+                        inventory2.isFull[y] = true;
+                        Instantiate(itemButton, inventory2.yellowSlots[y].transform, false);
+
+                        if (itemButton.name == "Gems 1")
+                        {
+                            Debug.Log("Gems");
+                            Inventory2.Instance.yGems++;
+                        }
+                        if (itemButton.name == "Badkeys 1")
+                        {
+                            Debug.Log("BK");
+                            Inventory2.Instance.yBadKey++;
+                        }
+                        if (itemButton.name == "Feathers 1")
+                        {
+                            Debug.Log("F");
+                            Inventory2.Instance.yFeathers++;
+                        }
+                        if (itemButton.name == "Food 1")
+                        {
+                            Debug.Log("Food");
+                            Inventory2.Instance.yFood++;
+                        }
+                        if (itemButton.name == "gum 1")
+                        {
+                            Debug.Log("gum");
+                            Inventory2.Instance.yGums++;
+                        }
+                        if (itemButton.name == "Ropes")
+                        {
+                            Debug.Log("rope");
+                            Inventory2.Instance.yRopes++;
+                        }
+                        if (itemButton.name == "Goodkeys 1")
+                        {
+                            Debug.Log("gd key");
+                            Inventory2.Instance.yGoodKey++;
+                        }
+
+                        Destroy(gameObject);
+                    //Instantiate(gameObject);
+                        //Debug.Log("onefull");
+                        break;
+                    }
+                }
+            }
+       
     }
 }

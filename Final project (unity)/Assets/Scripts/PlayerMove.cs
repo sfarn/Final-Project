@@ -13,16 +13,25 @@ public class PlayerMove : MonoBehaviour
         public KeyCode upKey;
         public KeyCode downKey;
 
-    AudioSource audio;
+    public AudioSource good;
+    public AudioSource bad;
+    public AudioSource trap;
+    public int hurt;
     //Animator animator;
+    public static PlayerMove Instance;
 
 
     // Start is called before the first frame update
     void Start()
         {
             rb = GetComponent<Rigidbody2D>();
-        audio = GetComponent<AudioSource>();
+        AudioSource[] audios = GetComponents<AudioSource>();
+        good = audios[0];
+        bad = audios[1];
+        trap = audios[2];
+        hurt = 0;
         //animator = GetComponent<Animator>();
+        Instance = this;
     }
 
         void FixedUpdate() //!
@@ -89,9 +98,19 @@ public class PlayerMove : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("items"))
+        if (col.CompareTag("Needed"))
         {
-            audio.Play();
+            good.Play();
+        }
+        if (col.CompareTag("NotNeeded"))
+        {
+            bad.Play();
+        }
+        if (col.CompareTag("Trap"))
+        {
+            trap.Play();
+            //hurt++;
+            //hurt = 0;
         }
     }
 }

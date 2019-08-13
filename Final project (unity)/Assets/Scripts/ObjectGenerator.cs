@@ -22,6 +22,9 @@ public class ObjectGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(objects == null)  //if that there is no object in that point
+        {
+            Debug.Log("Gone");
+        }
     }
 }

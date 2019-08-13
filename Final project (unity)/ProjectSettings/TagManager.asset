@@ -6,7 +6,9 @@ TagManager:
   tags:
   - Red
   - Yellow
-  - items
+  - Needed
+  - NotNeeded
+  - Trap
   layers:
   - Default
   - TransparentFX

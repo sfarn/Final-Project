@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 92290950168678233}
   m_Layer: 0
   m_Name: Gums
-  m_TagString: items
+  m_TagString: NotNeeded
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
