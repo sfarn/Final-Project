@@ -28,22 +28,52 @@ public class DropSlot : MonoBehaviour
         if (other.CompareTag("Trap"))
         {
            
-                for (int i = inventory.redSlots.Length - 1; i >= 0; i--)
-                {   //check the slot from down to up
-                    if (inventory.redItems[i] != null)
+            for (int i = inventory.redSlots.Length - 1; i >= 0; i--)
+            {   //check the slot from down to up
+                if (inventory.redItems[i] != null)
+                {
+                    string itemName = inventory.redItems[i].name;    
+                    Destroy(inventory.redItems[i]);
+
+                    
+                    inventory.isFull[i] = false;
+
+
+                    // find empty point
+                    // instantiate correct object
+                    foreach(ObjectGenerator og in PointManager.Instance.Point)
                     {
-                        Destroy(inventory.redItems[i]);
-                        inventory.isFull[i] = false;
-                    break;
+                        if (og.instantiateditem == null)
+                        {
+                            GameObject objectToCreate = null;
+                            foreach(GameObject g in og.objects)
+                            {
+                                if (g.name+"(Clone)" == itemName)
+                                {
+                                    objectToCreate = g;
+                                }
+                            }
+
+                            if (objectToCreate == null)
+                            {
+                                Debug.LogError("game object match not found");
+                            }
+                            og.instantiateditem = Instantiate(objectToCreate, og.transform.position, Quaternion.identity);
+                            //objectToCreate = og.instantiateditem;
+                            break;
+                        }
                     }
-                    //if (inventory.isFull[i] == true) //there is an item
-                    //{
-                    //    Debug.Log("fill");
-                    //   Destroy(PickUp.Instance.itemButton); //destroy that item on the latest slot
-                    //    inventory.isFull[i] = false;  //that slot becomes empty again
-                    //    //PlayerMove.Instance.hurt = 0;
-                    //}
+
+                    break;
                 }
+                //if (inventory.isFull[i] == true) //there is an item
+                //{
+                //    Debug.Log("fill");
+                //   Destroy(PickUp.Instance.itemButton); //destroy that item on the latest slot
+                //    inventory.isFull[i] = false;  //that slot becomes empty again
+                //    //PlayerMove.Instance.hurt = 0;
+                //}
+            }
             for (int i = inventory2.yellowSlots.Length - 1; i >= 0; i--)
             {   //check the slot from down to up
                 if (inventory2.yellowItems[i] != null)

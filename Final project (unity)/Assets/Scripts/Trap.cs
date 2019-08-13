@@ -14,7 +14,6 @@ public class Trap : MonoBehaviour
     void Start()
     {
         Instance = this;
-        hurt = 1;
     }
 
     // Update is called once per frame
@@ -26,10 +25,8 @@ public class Trap : MonoBehaviour
     {
         if (col.transform.CompareTag("Red"))
         {
-            hurt++;
             col.transform.position = Respawn.position;
-           //hurt = 0;
-
+       
         }
         if (col.transform.CompareTag("Yellow"))
         {

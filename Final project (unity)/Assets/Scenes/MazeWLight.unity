@@ -394,6 +394,7 @@ MonoBehaviour:
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
   - {fileID: 8206285618681340617, guid: f29256080bbd14a76a53814c6760a062, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &285975394
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +443,7 @@ MonoBehaviour:
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &291549677
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +601,7 @@ MonoBehaviour:
   objects:
   - {fileID: 3015456478083756733, guid: d743361857060468684f8a50c8f6a42f, type: 3}
   - {fileID: 5771826904329379675, guid: f9cf15f8b46064f0ab5bf3fd2b6bfb21, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &346608582
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +650,7 @@ MonoBehaviour:
   - {fileID: 8478793676466255106, guid: d67d64a19437f409aa52717c347a6126, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &347597679
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +700,7 @@ MonoBehaviour:
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 234367877737617660, guid: 1873d07cc1c87419e84d4c023061d20e, type: 3}
   - {fileID: 8206285618681340617, guid: f29256080bbd14a76a53814c6760a062, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &365761862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &481316076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2287,6 +2292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLightRadius: 6.5
+  decreaseSpeed: 0
 --- !u!1 &605807282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,6 +2455,7 @@ MonoBehaviour:
   objects:
   - {fileID: 5771826904329379675, guid: f9cf15f8b46064f0ab5bf3fd2b6bfb21, type: 3}
   - {fileID: 5771826904329379675, guid: f9cf15f8b46064f0ab5bf3fd2b6bfb21, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &753953035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,6 +2669,7 @@ MonoBehaviour:
   objects:
   - {fileID: 5771826904329379675, guid: f9cf15f8b46064f0ab5bf3fd2b6bfb21, type: 3}
   - {fileID: 5771826904329379675, guid: f9cf15f8b46064f0ab5bf3fd2b6bfb21, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &783320599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +3748,7 @@ MonoBehaviour:
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
   - {fileID: 8206285618681340617, guid: f29256080bbd14a76a53814c6760a062, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &1303224525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,6 +4002,7 @@ MonoBehaviour:
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
   - {fileID: 8206285618681340617, guid: f29256080bbd14a76a53814c6760a062, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &1481215223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4114,6 +4124,7 @@ MonoBehaviour:
   objects:
   - {fileID: 5066726850028087662, guid: b42c583db4ee04bfda13b4724691c3d6, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &1514505173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +4254,7 @@ MonoBehaviour:
   - {fileID: 8206285618681340617, guid: f29256080bbd14a76a53814c6760a062, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &1552886616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,6 +4303,7 @@ MonoBehaviour:
   - {fileID: 8478793676466255106, guid: d67d64a19437f409aa52717c347a6126, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &1603787941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5157,6 +5170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLightRadius: 6.5
+  decreaseSpeed: 0
 --- !u!1 &1783178039
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +5693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889676039}
+  - component: {fileID: 1889676040}
   m_Layer: 0
   m_Name: Level0
   m_TagString: Untagged
@@ -5713,6 +5728,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1889676040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889676038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed28a9beb069f450d9a1ff84e994bc67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Point:
+  - {fileID: 346608584}
+  - {fileID: 1959395730}
+  - {fileID: 1413197611}
+  - {fileID: 744867547}
+  - {fileID: 308672116}
+  - {fileID: 1275354225}
+  - {fileID: 764737568}
+  - {fileID: 1535758800}
+  - {fileID: 285975396}
+  - {fileID: 1552886618}
+  - {fileID: 1508307363}
+  - {fileID: 347597681}
+  - {fileID: 270726134}
 --- !u!1 &1959395728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5761,6 +5802,7 @@ MonoBehaviour:
   - {fileID: 8478793676466255106, guid: d67d64a19437f409aa52717c347a6126, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &1980096105
 GameObject:
   m_ObjectHideFlags: 0

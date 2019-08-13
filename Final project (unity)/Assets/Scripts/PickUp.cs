@@ -40,27 +40,27 @@ public class PickUp : MonoBehaviour
                     inventory.isFull[i] = true;
                     inventory.redItems[i] = Instantiate(itemButton, inventory.redSlots[i].transform, false);
                    
-                    if (itemButton.name == "Gems 1")
+                    if (itemButton.name == "Gems")
                     {
                         Debug.Log("Gems");
                         Inventory.Instance.Gems++;
                     }
-                    if (itemButton.name == "Badkeys 1")
+                    if (itemButton.name == "BKeys")
                     {
                         Debug.Log("BK");
                         Inventory.Instance.BadKey++;
                     }
-                    if (itemButton.name == "Feathers 1")
+                    if (itemButton.name == "Feathers")
                     {
                         Debug.Log("F");
                         Inventory.Instance.Feathers++;
                     }
-                    if (itemButton.name == "Food 1")
+                    if (itemButton.name == "Food")
                     {
                         Debug.Log("Food");
                         Inventory.Instance.Food++;
                     }
-                    if (itemButton.name == "gum 1")
+                    if (itemButton.name == "Gums")
                     {
                         Debug.Log("gum");
                         Inventory.Instance.Gums++;
@@ -70,7 +70,7 @@ public class PickUp : MonoBehaviour
                         Debug.Log("rope");
                         Inventory.Instance.Ropes++;
                     }
-                    if (itemButton.name == "Goodkeys 1")
+                    if (itemButton.name == "GdKeys")
                     {
                         Debug.Log("gd key");
                         Inventory.Instance.GoodKey++;
