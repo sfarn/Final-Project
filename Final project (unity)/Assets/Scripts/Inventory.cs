@@ -8,6 +8,8 @@ public class Inventory : MonoBehaviour
     public bool[] isFull;
     public GameObject[] redSlots;
     public GameObject[] yellowSlots;
+    public GameObject[] redItems;
+    //public GameObject[] yellowItems;
     public int index;
     public static Inventory Instance;
 

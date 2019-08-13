@@ -9,6 +9,7 @@ public class Inventory2 : MonoBehaviour
     public GameObject[] yellowSlots;
     public int index;
     public static Inventory2 Instance;
+    public GameObject[] yellowItems;
 
     public int yGems;
     public int yBadKey;

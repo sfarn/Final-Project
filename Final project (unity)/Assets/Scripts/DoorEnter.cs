@@ -7,6 +7,11 @@ public class DoorEnter : MonoBehaviour
     private Inventory inventory;
     private Inventory2 inventory2;
     public GameObject[] items;
+    public int RGet;
+    public int YGet;
+    //public int coget;
+    public bool Rcoget;
+    public bool Ycoget;
 
 
     // Start is called before the first frame update
@@ -14,12 +19,32 @@ public class DoorEnter : MonoBehaviour
     {
         inventory = GameObject.FindGameObjectWithTag("Red").GetComponent<Inventory>();
         inventory2 = GameObject.FindGameObjectWithTag("Yellow").GetComponent<Inventory2>();
+        RGet = 0;
+        YGet = 0;
+        //coget = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (RGet >= 5)
+        {
+            Rcoget = true;
+        }
+        if (YGet >= 5)
+        {
+            Ycoget = true;
+        }
 
+        if (Rcoget == true)
+        {
+            if (Ycoget == true)
+            {
+                Debug.Log("Go in");
+                //Load scene
+            }
+        }
+      
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,26 +54,28 @@ public class DoorEnter : MonoBehaviour
             {
                 if (inventory.redSlots[i] != null)
                 {
-                 if(Inventory.Instance.GoodKey > 0)
+                    if (Inventory.Instance.GoodKey > 0) //one key
                     {
-                        if (Inventory.Instance.Gems > 0)
+                        //RGet++;
+
+                        if (Inventory.Instance.Gems > 1) //two gem
                         {
-                            if (Inventory.Instance.Ropes > 0)
+                           //RGet++;
+                            if (Inventory.Instance.Food > 0) //one food
                             {
-                                if (Inventory.Instance.Food > 0)
-                                {
-                                    Debug.Log("Go in"); //load scene
-                                }
+                                Debug.Log("got all");//load scene
+                                RGet++;
                             }
                         }
-
                     }
 
-
                 }
 
-                }
+
             }
+
+        }
+
         if (other.CompareTag("Yellow"))
         {
             for (int i = 0; i < inventory2.yellowSlots.Length; i++) //check through the inventory slot
@@ -57,24 +84,19 @@ public class DoorEnter : MonoBehaviour
                 {
                     if (Inventory2.Instance.yGoodKey > 0)
                     {
-                        if (Inventory2.Instance.yGems > 0)
-                        {
-                            if (Inventory2.Instance.yRopes > 0)
+                       if (Inventory2.Instance.yRopes > 1)  //2 ropes
                             {
-                                if (Inventory2.Instance.yFood > 0)
+                            if (Inventory2.Instance.yFood > 0)
                                 {
-                                    Debug.Log("Go in"); //load scene
-                                }
+                                    Debug.Log("got all"); //load scene
+                                    YGet++;
+                            }
                             }
                         }
-
                     }
-
-
                 }
-
             }
         }
     }
-    }
+
 
