@@ -109,27 +109,27 @@ public class PickUp : MonoBehaviour
                         inventory2.isFull[y] = true;
                         inventory2.yellowItems[y] = Instantiate(itemButton, inventory2.yellowSlots[y].transform, false);
 
-                        if (itemButton.name == "Gems 1")
+                        if (itemButton.name == "Gems")
                         {
                             Debug.Log("Gems");
                             Inventory2.Instance.yGems++;
                         }
-                        if (itemButton.name == "Badkeys 1")
+                        if (itemButton.name == "BKeys")
                         {
                             Debug.Log("BK");
                             Inventory2.Instance.yBadKey++;
                         }
-                        if (itemButton.name == "Feathers 1")
+                        if (itemButton.name == "Feathers")
                         {
                             Debug.Log("F");
                             Inventory2.Instance.yFeathers++;
                         }
-                        if (itemButton.name == "Food 1")
+                        if (itemButton.name == "Food")
                         {
                             Debug.Log("Food");
                             Inventory2.Instance.yFood++;
                         }
-                        if (itemButton.name == "gum 1")
+                        if (itemButton.name == "Gums")
                         {
                             Debug.Log("gum");
                             Inventory2.Instance.yGums++;
@@ -139,7 +139,7 @@ public class PickUp : MonoBehaviour
                             Debug.Log("rope");
                             Inventory2.Instance.yRopes++;
                         }
-                        if (itemButton.name == "Goodkeys 1")
+                        if (itemButton.name == "GdKeys")
                         {
                             Debug.Log("gd key");
                             Inventory2.Instance.yGoodKey++;

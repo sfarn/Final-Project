@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorEnter : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DoorEnter : MonoBehaviour
     //public int coget;
     public bool Rcoget;
     public bool Ycoget;
+    public string sceneName;
 
 
     // Start is called before the first frame update
@@ -42,6 +44,7 @@ public class DoorEnter : MonoBehaviour
             {
                 Debug.Log("Go in");
                 //Load scene
+                SceneManager.LoadScene(sceneName);
             }
         }
       
@@ -63,7 +66,7 @@ public class DoorEnter : MonoBehaviour
                            //RGet++;
                             if (Inventory.Instance.Food > 0) //one food
                             {
-                                Debug.Log("got all");//load scene
+                               // Debug.Log("got all");//load scene
                                 RGet++;
                             }
                         }
@@ -78,6 +81,7 @@ public class DoorEnter : MonoBehaviour
 
         if (other.CompareTag("Yellow"))
         {
+            Debug.Log("got all");
             for (int i = 0; i < inventory2.yellowSlots.Length; i++) //check through the inventory slot
             {
                 if (inventory2.yellowSlots[i] != null)

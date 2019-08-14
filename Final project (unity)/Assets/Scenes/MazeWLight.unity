@@ -986,6 +986,7 @@ MonoBehaviour:
   - {fileID: 387623878643919816, guid: bd2b0fc27016048558f526187613bcc4, type: 3}
   - {fileID: 8206285618681340617, guid: f29256080bbd14a76a53814c6760a062, type: 3}
   - {fileID: 3034954514531793158, guid: 649fd11f5d73941b0ae7b30a04c5b429, type: 3}
+  instantiateditem: {fileID: 0}
 --- !u!1 &442927178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,7 +1609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &481316076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3189,6 +3190,7 @@ MonoBehaviour:
   YGet: 0
   Rcoget: 0
   Ycoget: 0
+  sceneName: Win
 --- !u!212 &820304523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4072,7 +4074,6 @@ Transform:
   - {fileID: 218311434}
   - {fileID: 1152285497}
   - {fileID: 1332288219}
-  - {fileID: 272926640}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

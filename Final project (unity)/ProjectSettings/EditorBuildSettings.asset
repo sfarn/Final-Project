@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MazeWLight.unity
     guid: 7a820854383a94895849982a951426b2
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: feea50f3dbc8941cf805cb4a032cdeef
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: bedbd8a848ccc4b769c3250d5e531e0b
   m_configObjects: {}
