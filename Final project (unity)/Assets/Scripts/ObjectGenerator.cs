@@ -7,25 +7,24 @@ public class ObjectGenerator : MonoBehaviour
     public GameObject[] objects;
     public GameObject instantiateditem;
 
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        int random = Random.Range(0, objects.Length);
-        instantiateditem = Instantiate(objects[random], transform.position, Quaternion.identity);
-        //objects[random] = instantiateditem;
-
-
-    }
+//    // Start is called before the first frame update
+//    void Start()
+//    {
+//
+//        int random = Random.Range(0, objects.Length);
+//        instantiateditem = Instantiate(objects[random], transform.position, Quaternion.identity);
+//        //objects[random] = instantiateditem;
+//
+//
+//    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q)) //works, generate another set of random items at all point but overlap if original is still here
-        { //how to generate one point at a time
+        if (Input.GetKeyDown(KeyCode.Q)
+        ) //works, generate another set of random items at all point but overlap if original is still here
+        {
+            //how to generate one point at a time
             int random = Random.Range(0, objects.Length);
             Instantiate(objects[random], transform.position, Quaternion.identity);
         }
@@ -36,5 +35,6 @@ public class ObjectGenerator : MonoBehaviour
         //    int random = Random.Range(0, objects.Length);
         //    Instantiate(objects[random], transform.position, Quaternion.identity);
         //}
+        // }
     }
 }
