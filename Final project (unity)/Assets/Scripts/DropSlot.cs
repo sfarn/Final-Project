@@ -78,8 +78,38 @@ public class DropSlot : MonoBehaviour
             {   //check the slot from down to up
                 if (inventory2.yellowItems[i] != null)
                 {
+                    string itemName = inventory2.yellowItems[i].name;
                     Destroy(inventory2.yellowItems[i]);
+
+
                     inventory2.isFull[i] = false;
+
+
+                    // find empty point
+                    // instantiate correct object
+                    foreach (ObjectGenerator og in PointManager.Instance.Point)
+                    {
+                        if (og.instantiateditem == null)
+                        {
+                            GameObject objectToCreate = null;
+                            foreach (GameObject g in og.objects)
+                            {
+                                if (g.name + "(Clone)" == itemName)
+                                {
+                                    objectToCreate = g;
+                                }
+                            }
+
+                            if (objectToCreate == null)
+                            {
+                                Debug.LogError("game object match not found");
+                            }
+                            og.instantiateditem = Instantiate(objectToCreate, og.transform.position, Quaternion.identity);
+                            //objectToCreate = og.instantiateditem;
+                            break;
+                        }
+                    }
+
                     break;
                 }
            
