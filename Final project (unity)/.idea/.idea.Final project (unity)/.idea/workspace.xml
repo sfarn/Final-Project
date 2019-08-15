@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1f50b07-cf3b-4de6-b8bc-3e61d2ee1d9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MazeWLight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MazeWLight.unity" afterDir="false" />
-    </list>
+    <list default="true" id="f1f50b07-cf3b-4de6-b8bc-3e61d2ee1d9f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MazeMake.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="105">
               <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding>
                 <marker date="1565655028339" expanded="false" signature="6:78" ph="..." />
@@ -34,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightDecrease.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="120">
               <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
               <folding>
                 <marker date="1565721112411" expanded="false" signature="6:125" ph="..." />
@@ -47,17 +45,46 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ObjectGenerator.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <marker date="1565723087573" expanded="false" signature="6:78" ph="..." />
-                <marker date="1565723087573" expanded="true" signature="124:780" ph="{...}" />
-                <marker date="1565723087573" expanded="true" signature="232:381" ph="{...}" />
-                <marker date="1565723087573" expanded="true" signature="439:778" ph="{...}" />
-                <marker date="1565723087573" expanded="true" signature="486:647" ph="{...}" />
-                <marker date="1565723087573" expanded="true" signature="721:772" ph="{...}" />
+                <marker date="1565739394553" expanded="false" signature="6:78" ph="..." />
+                <marker date="1565739394553" expanded="true" signature="124:1182" ph="{...}" />
+                <marker date="1565739394553" expanded="true" signature="1173:1174" ph="{...}" />
+                <marker date="1565739394553" expanded="true" signature="1173:1180" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+              <folding>
+                <marker date="1565739389507" expanded="false" signature="6:78" ph="..." />
+                <marker date="1565739389507" expanded="true" signature="119:2821" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="579:869" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="901:1075" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1141:2470" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1268:1339" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1379:1449" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1486:1554" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1594:1664" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1743:1847" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="1770:1837" ph="/* animator.SetBool(&quot;isIDLE&quot;, true); ... */" />
+                <marker date="1565739389507" expanded="true" signature="1880:1999" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2036:2156" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2188:2308" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2345:2463" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2512:2819" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2556:2601" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2642:2686" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2722:2813" ph="{...}" />
+                <marker date="1565739389507" expanded="true" signature="2770:2803" ph="/* hurt++; ... */" />
               </folding>
             </state>
           </provider>
@@ -69,6 +96,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightDecrease.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeMake.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,9 +120,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1905" />
-    <option name="width" value="1950" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-15" />
+    <option name="width" value="1518" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -178,8 +206,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26022804" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -253,16 +280,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/MazeMake.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/PlayerController.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/LightDecrease.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LightDecrease.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MazeMake.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding>
             <marker date="1565655028339" expanded="false" signature="6:78" ph="..." />
@@ -279,7 +300,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightDecrease.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="120">
           <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
           <folding>
             <marker date="1565721112411" expanded="false" signature="6:125" ph="..." />
@@ -295,12 +316,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1565723087573" expanded="false" signature="6:78" ph="..." />
-            <marker date="1565723087573" expanded="true" signature="124:780" ph="{...}" />
-            <marker date="1565723087573" expanded="true" signature="232:381" ph="{...}" />
-            <marker date="1565723087573" expanded="true" signature="439:778" ph="{...}" />
-            <marker date="1565723087573" expanded="true" signature="486:647" ph="{...}" />
-            <marker date="1565723087573" expanded="true" signature="721:772" ph="{...}" />
+            <marker date="1565739394553" expanded="false" signature="6:78" ph="..." />
+            <marker date="1565739394553" expanded="true" signature="124:1182" ph="{...}" />
+            <marker date="1565739394553" expanded="true" signature="1173:1174" ph="{...}" />
+            <marker date="1565739394553" expanded="true" signature="1173:1180" ph="{...}" />
           </folding>
         </state>
       </provider>
